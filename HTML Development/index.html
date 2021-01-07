@@ -1,0 +1,110 @@
+<!DOCTYPE HTML> <!--Esto indica la versión que estamos utilizando o el tipo de documento que vamos a utilizar, hay HTML5 XHTML, etc-->
+<html lang="es">
+	<head>
+		<title>Mi primerita web</title>
+	</head>
+	<body>
+		<h1>Título de mi web</h1> <!--los hx son encabezados, en concreto de h1 solo tiene que haber uno, del resto puede haber más. Hay hasta el numero 6 (h1 ... h6) -->
+
+		<h2>Bienvenidos a mi web</h2>
+
+		<p>
+			Hola que tal desde <br/> <!-- br es la etiqueta de salto de linea, etiqueta strong es negrita y la etiqueta em o i, es en cursiva--> <em>este</em> - <i>bonito</i> <strong>curso</strong>
+		</p> <!-- la p son párrafos-->
+
+		<hr/> <!-- hr dibuja una linea y hace salto de linea -->
+
+		<p><span id="resultado" class="rojo amarillo">
+			Para maquetar</span> en css y otorgar un identificador y posible clase, utilizamos <em>span</em>.
+		</p>
+
+		<hr/>
+
+		<h3>Formularios en HTML</h3>
+		<form> <!--si estas en back end y quieres enviar cosas se pueden utilizar action="" y method="post" dentro de form (formulario)-->
+			<p>
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre" placeholder="Escribe tu nombre" /> <!-- type indica el tipo de caracteres que van en el input y name es donde se guarda lo que introduzcamos. Se pone tmb donde se guarda en el label con el for para que este referenciado. placeholder sirve para visualizar un texto de ayuda o referencia en el campo del formulario que desaparece cuando escribes.-->
+			</p>
+
+			<p>
+				<label for="descripcion">Descripción</label>
+				<textarea name="descripcion"></textarea>
+			</p>
+
+			<p> <!-- radio buttons es para poder seleccionar opciones, clicas en la opción y luego das a enviar. Lo que realmente se envía es el value, no lo que pones después-->
+				<input type="radio" name="genero" value="hombre"> Hombre <br/>
+				<input type="radio" name="genero" value="mujer"> Mujer <br/>
+				<input type="radio" name="genero" value="nada"> Nada <br/>
+			</p>
+
+			<select name="generodos"> <!-- select es para hacer un desplegable de opciones-->
+				<option value="hombre">Hombre</option>
+				<option value="mujer">Mujer</option>
+				<option value="nada">Nada</option>
+			</select>
+			<br/>
+			<br/>
+
+			<input type="submit" value="Enviar formulario" /> <!--boton de enviar formulario-->
+
+		</form>
+
+
+		<hr/>
+
+
+			<h2>Ímágenes en HTML</h2> <!-- se puede poner la ruta entera "C:\Users\Fernando García\Documents\COSAS FERNANDO\ROBÓTICA\MASTER JAVASCRIPT\DESARROLLO HTML\Imágenes" o solo la carpeta donde esta, lo cual es mejor si se mueve cualquier proyecto. También se puede asignar altura y ancho de la foto individualmente o ambas pero se puede deformar si no se cambian acorde, mejor cambiar una solo para no deformar.-->
+			<img src="Imágenes/gatito.jpg" alt="Imagen no disponible" title="Gatito owo" width="400" height="" />
+
+		<hr/>
+
+		<blockquote>
+			También podemos usar el blockquote para resaltar texto como una cita  y ponerle un espaciado especial de citado.
+		</blockquote>
+
+		<ol> <!-- ol para lista "ordenada", con números-->
+			<li>Manzana</li>
+			<li>Naranja</li>
+			<li>Pera</li>
+			<li>Sandía</li>
+
+		</ol>
+
+		<ul> <!-- ul para lista "unordenated", sin números y se pueden poner sublistas dentro también-->
+			<li>Manzana</li>
+				<ul>
+					<li>Roja</li>
+					<li>Verde</li>
+				</ul>
+			<li>Naranja</li>
+			<li>Pera</li>
+			<li>Sandía</li>
+
+		</ul>
+
+		<h3>Tablas en HTML</h3>
+
+		<table border="1">
+			<tr> <!--tr para filas-->
+				<th>Nombre</th> <!-- th para columnas de encabezado (*negrita*)-->
+				<th>Apellidos</th>
+				<th>País</th>
+			</tr>
+			<tr> <!--tr para filas-->
+				<td>Fernando</td> <!-- td para columnas-->
+				<td>García</td>
+				<td>España</td>
+			</tr>
+			<tr> <!--tr para filas-->
+				<td>Mauro</td> <!-- td para columnas-->
+				<td colspan="1">Castrillón</td> <!-- colspan se usa en los td para ampliar el espacio que ocupa una casilla en esa fila, 2 ocuparía 2 espacios. En este caso, más de 2 no salen porque solo hay 3 columnas -->
+				<td>Francia</td>
+			</tr>
+		</table>
+
+
+
+	</body>
+
+</html> <!-- dentro de los dos html va toda la pagina web-->
