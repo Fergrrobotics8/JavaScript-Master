@@ -27,15 +27,33 @@ caja.className = "hola pa ti mi cola";
 //CONSEGUIR ELEMENTOS POR SU ETIQUETA
 var todosLosDivs = document.getElementsByTagName("div");
 
-//.textContent para sacar el contenido que tiene el div
+
+var contenidoEnTexto = todosLosDivs[2]
+contenidoEnTexto.innerHTML = "Otro texto para el segundo elemento";
+//esto sustituye el contenido del div [2] que esta en el array todosLosDivs
+
+contenidoEnTexto.style.background = "red";
+
+var valor;
+//todosLosDivs.forEach((valor,indice)=>{
+for(valor in todosLosDivs){
+	var parrafo = document.createElement("p");
+	var texto = document.createTextNode(todosLosDivs[valor].textContent);
+	parrafo.appendChild(texto);
+	document.querySelector("#miSeccion").appendChild(parrafo);
+}
+//});
+
 
 var seccion = document.querySelector("#miSeccion");
 var hr = document.createElement("hr");
 
 
+
 var valor;
 
 for(valor in todosLosDivs){
+	console.log(valor);
 	if(typeof todosLosDivs[valor].textContent == "string"){
 		var parrafo = document.createElement("p"); //crea etiquetas, con el p (parrafos)
 		var texto = document.createTextNode(todosLosDivs[valor].textContent);
