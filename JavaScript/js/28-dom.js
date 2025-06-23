@@ -10,7 +10,6 @@ function cambiaColor(color){
 
 //CONSEGUIR ELEMENTOS CON UN ID CONCRETO
 
-//hi
 
 var caja = document.querySelector("#micaja");
 //# para seleccionar el Id, sin nada para el nombre de la etiqueta y un . para seleccionar una clase
